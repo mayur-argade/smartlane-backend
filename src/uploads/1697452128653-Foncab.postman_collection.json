@@ -1,0 +1,3748 @@
+{
+	"info": {
+		"_postman_id": "03c0a349-6b8e-10e5-a9b5-6578cd2dded9",
+		"name": "Foncab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3889435"
+	},
+	"item": [
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Classes list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/classes",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Classes details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/classes/17",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"classes",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Class",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "class_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "class_category_name",
+									"value": "Juz",
+									"type": "text"
+								},
+								{
+									"key": "class_subcategory_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "class_description",
+									"value": "desc",
+									"type": "text"
+								},
+								{
+									"key": "class_student_id[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "class_student_id[1]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "class_student_id[2]",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/classes/create",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"classes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Class",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "class_name",
+									"value": "test :)...",
+									"type": "text"
+								},
+								{
+									"key": "class_category_name",
+									"value": "Juz"
+								},
+								{
+									"key": "class_subcategory_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "class_description",
+									"value": "desc",
+									"type": "text"
+								},
+								{
+									"key": "class_student_id[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "class_student_id[1]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "class_student_id[2]",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/classes/update/7",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"classes",
+								"update",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy Class",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/classes/destroy/0",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"classes",
+								"destroy",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lessons",
+			"item": [
+				{
+					"name": "Lessons",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/lessons",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"lessons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lessons topics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/topics/?lesson_id=2",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"topics",
+								""
+							],
+							"query": [
+								{
+									"key": "lesson_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invitation",
+			"item": [
+				{
+					"name": "Invitation send",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Testing",
+									"type": "text"
+								},
+								{
+									"key": "invitation_time",
+									"value": "2021-01-21 10:00:00",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Indore",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "22.6777",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "75.8777",
+									"type": "text"
+								},
+								{
+									"key": "users",
+									"value": "444,13,14",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/invitation/send",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"invitation",
+								"send"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invitation sent not working",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/invitation/sent",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"invitation",
+								"sent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invitation received",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/invitation/received",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"invitation",
+								"received"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invitation update-status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "310",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "accept",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/invitation/update-status",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"invitation",
+								"update-status"
+							]
+						},
+						"description": "accept\nreject"
+					},
+					"response": []
+				},
+				{
+					"name": "invitation upcoming",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI4NTQ1MDksImV4cCI6MTY4NDM5MDUwOSwibmJmIjoxNjUyODU0NTA5LCJqdGkiOiJiUHVsTXpBWjdBbGlabG1GIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoibmFyZW5kcmEiLCJsYXN0X25hbWUiOiJkZXZ5YW5pIiwiZW1haWwiOiJzdXJhajFAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvM2RkNTY0ZDMxN2MzM2UwZDA0ZGY0ZDJiOGRlNzk0NWMuanBnP3M9ODAmZD1tbSZyPWciLCJjb25maXJtZWQiOjEsInJvbGUiOiJJbnN0cnVjdG9yIiwicGVybWlzc2lvbnMiOltdLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjItMDQtMDRUMTQ6MDk6MTUrMDA6MDAifQ.qOpKjGiATL3cGdqIHzFLTw29t2MAv7zn9z85NzBt-zU"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "310",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "accept",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/invitation/upcoming",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"invitation",
+								"upcoming"
+							]
+						},
+						"description": "accept\nreject"
+					},
+					"response": []
+				},
+				{
+					"name": "invitation invited_users by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "310",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "accept",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/invitation/invited_users/124",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"invitation",
+								"invited_users",
+								"124"
+							]
+						},
+						"description": "accept\nreject"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "Notification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/notification",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Notification delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/notification",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"notification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "Roles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/roles",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Donation",
+			"item": [
+				{
+					"name": "Donation give",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "donor_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "9123456789",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/donation/create",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"donation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Donation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/donation",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"donation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/user-list",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"user-list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Blog categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/blog_categories",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"blog_categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/blog_tags",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"blog_tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blogs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.219.45.126/prayers/api/v1/blogs",
+							"protocol": "http",
+							"host": [
+								"18",
+								"219",
+								"45",
+								"126"
+							],
+							"path": [
+								"prayers",
+								"api",
+								"v1",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Manish",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Atre",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "manishatre.kavyasoftech@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "1245785412",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "is_term_accept",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "Xiaomi",
+									"type": "text"
+								},
+								{
+									"key": "imei",
+									"value": "0238e6ef9c8b75a5&notification_id=e8Tbj0o7Y4g:APA91bEkE4RA2_-mrKWZ3TEBGdCc3gJz8wbi9vNwuUPoCu_prqwyDjtdhLkqrvkb5XyDNe2sIZA-lGXAuV4PVfV-ZeOT5f3AQtw1VUB4LrsXln1EkbROL8FlUZmXk8jQCKtSFuaNmoxe",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "modal_no",
+									"value": "Redmi Note 5 Pro",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "suraj1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "deepchild@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number1",
+									"value": "1245785410",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "Xiaomi",
+									"type": "text"
+								},
+								{
+									"key": "imei",
+									"value": "0238e6ef9c8b75a5&notification_id=e8Tbj0o7Y4g:APA91bEkE4RA2_-mrKWZ3TEBGdCc3gJz8wbi9vNwuUPoCu_prqwyDjtdhLkqrvkb5XyDNe2sIZA-lGXAuV4PVfV-ZeOT5f3AQtw1VUB4LrsXln1EkbROL8FlUZmXk8jQCKtSFuaNmoxe",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://foncab.kavyasoftech.com/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"foncab",
+								"kavyasoftech",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "suraj1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "deepchild@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number1",
+									"value": "1245785410",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "Xiaomi",
+									"type": "text"
+								},
+								{
+									"key": "imei",
+									"value": "0238e6ef9c8b75a5&notification_id=e8Tbj0o7Y4g:APA91bEkE4RA2_-mrKWZ3TEBGdCc3gJz8wbi9vNwuUPoCu_prqwyDjtdhLkqrvkb5XyDNe2sIZA-lGXAuV4PVfV-ZeOT5f3AQtw1VUB4LrsXln1EkbROL8FlUZmXk8jQCKtSFuaNmoxe",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://foncab.kavyasoftech.com/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"foncab",
+								"kavyasoftech",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "parent register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Test11",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Atre",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Test44@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "4445785431",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "is_term_accept",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "Xiaomi",
+									"type": "text"
+								},
+								{
+									"key": "imei",
+									"value": "0238e6ef9c8b75a5&notification_id=e8Tbj0o7Y4g:APA91bEkE4RA2_-mrKWZ3TEBGdCc3gJz8wbi9vNwuUPoCu_prqwyDjtdhLkqrvkb5XyDNe2sIZA-lGXAuV4PVfV-ZeOT5f3AQtw1VUB4LrsXln1EkbROL8FlUZmXk8jQCKtSFuaNmoxe",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "modal_no",
+									"value": "Redmi Note 5 Pro",
+									"type": "text"
+								},
+								{
+									"key": "student_name[0]",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_gender[0]",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "student_dob[0]",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "student_email[0]",
+									"value": "student3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "student_phone_number[0]",
+									"value": "1431231230",
+									"type": "text"
+								},
+								{
+									"key": "student_password[0]",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "student_name[1]",
+									"value": "test1",
+									"type": "text"
+								},
+								{
+									"key": "student_gender[1]",
+									"value": "Female",
+									"type": "text"
+								},
+								{
+									"key": "student_dob[1]",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "student_email[1]",
+									"value": "student4@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "student_phone_number[1]",
+									"value": "1331231231",
+									"type": "text"
+								},
+								{
+									"key": "student_password[1]",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/auth/parent-register",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"parent-register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Student register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Test_stu",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Atre",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Test_stu@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "4445785466",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "student_gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "student_dob",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "is_term_accept",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "Xiaomi",
+									"type": "text"
+								},
+								{
+									"key": "imei",
+									"value": "0238e6ef9c8b75a5&notification_id=e8Tbj0o7Y4g:APA91bEkE4RA2_-mrKWZ3TEBGdCc3gJz8wbi9vNwuUPoCu_prqwyDjtdhLkqrvkb5XyDNe2sIZA-lGXAuV4PVfV-ZeOT5f3AQtw1VUB4LrsXln1EkbROL8FlUZmXk8jQCKtSFuaNmoxe",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "modal_no",
+									"value": "Redmi Note 5 Pro",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/auth/student-register",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"student-register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "instructor register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Test7",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Atre",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Test7@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "1245785566",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "is_term_accept",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "Xiaomi",
+									"type": "text"
+								},
+								{
+									"key": "imei",
+									"value": "0238e6ef9c8b75a5&notification_id=e8Tbj0o7Y4g:APA91bEkE4RA2_-mrKWZ3TEBGdCc3gJz8wbi9vNwuUPoCu_prqwyDjtdhLkqrvkb5XyDNe2sIZA-lGXAuV4PVfV-ZeOT5f3AQtw1VUB4LrsXln1EkbROL8FlUZmXk8jQCKtSFuaNmoxe",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "modal_no",
+									"value": "Redmi Note 5 Pro",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_class[0]",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_level[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_percentile[0]",
+									"value": "2021",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_class[1]",
+									"value": "test1",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_level[1]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_percentile[1]",
+									"value": "2021",
+									"type": "text"
+								},
+								{
+									"key": "instructor_award_name[0]",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "instructor_award_img[0]",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "instructor_award_name[1]",
+									"value": "test 123"
+								},
+								{
+									"key": "instructor_award_img[1]",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/auth/instructor-register",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"instructor-register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send Reset Link Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "parmeet.kavyasoftech@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/auth/password/email",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"password",
+								"email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Topic assign",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "class_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "assign_doc",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "assign_audio",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/topic-assign",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"topic-assign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks instructor list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NTQwMDgyNTAsImV4cCI6MTY4NTU0NDI1MCwibmJmIjoxNjU0MDA4MjUwLCJqdGkiOiJkZk1DNk5naHNoTHhFVUdQIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoibmFyZW5kcmEiLCJsYXN0X25hbWUiOiJkZXZ5YW5pIiwiZW1haWwiOiJzdXJhajFAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvM2RkNTY0ZDMxN2MzM2UwZDA0ZGY0ZDJiOGRlNzk0NWMuanBnP3M9ODAmZD1tbSZyPWciLCJjb25maXJtZWQiOjEsInJvbGUiOiJJbnN0cnVjdG9yIiwicGVybWlzc2lvbnMiOltdLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjItMDQtMDRUMTQ6MDk6MTUrMDA6MDAifQ.9dVqBkXz_PT4n31C2oJKSyII3hahk_vom56ddSB_j2c"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/instructor-tasks",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"instructor-tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks parent list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NTc3OTkyNDQsImV4cCI6MTY4OTMzNTI0NCwibmJmIjoxNjU3Nzk5MjQ0LCJqdGkiOiJHOUZRQlBET3Bmak84RElJIiwic3ViIjo3MTEsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NzExLCJmaXJzdF9uYW1lIjoiTWFoZXNoIiwibGFzdF9uYW1lIjoiTWFoYWphbiIsImVtYWlsIjoibWFoZXNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2ZjOGU1OTRkNDYyMzhjYTVjZjQ3ODhmZDZhMjRiYTUzLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiUGFyZW50IiwicGVybWlzc2lvbnMiOltdLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIyLTA3LTE0VDA2OjMxOjU2KzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjItMDctMTRUMDY6MzE6NTYrMDA6MDAifQ.MC-ZTMQa1xpOm7nRL-Zvu2TiG5bLctg7VJtduxlIOn0"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/parent-tasks",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"parent-tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks student list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NTQwMTAwOTksImV4cCI6MTY4NTU0NjA5OSwibmJmIjoxNjU0MDEwMDk5LCJqdGkiOiIwWGVjSUlvV1ZwYlNzWWp3Iiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoibmFyZW5kcmEiLCJsYXN0X25hbWUiOiJkZXZ5YW5pIiwiZW1haWwiOiJzdXJhajFAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvM2RkNTY0ZDMxN2MzM2UwZDA0ZGY0ZDJiOGRlNzk0NWMuanBnP3M9ODAmZD1tbSZyPWciLCJjb25maXJtZWQiOjEsInJvbGUiOiJJbnN0cnVjdG9yIiwicGVybWlzc2lvbnMiOltdLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjItMDQtMDRUMTQ6MDk6MTUrMDA6MDAifQ.D4mv1mks9gX93Yiz32oENum28CqLAoq9o59PsMjdqmU"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/student-tasks",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"student-tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/task-detail/82",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"task-detail",
+								"82"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks detail Student",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/task-detail-student/31/644",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"task-detail-student",
+								"31",
+								"644"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks detail Student parent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/task-detail-parent/82/711",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"task-detail-parent",
+								"82",
+								"711"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks submit assignment to instructor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "task_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "student_comment",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/submit-assignment-instructor",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"submit-assignment-instructor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task status update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "task_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Pending",
+									"type": "text"
+								},
+								{
+									"key": "student_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "progress_value",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "good work",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/task-status-update",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"task-status-update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Update student profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvc3R1ZGVudC1yZWdpc3RlciIsImlhdCI6MTY0OTMyMTgwNSwiZXhwIjoxNjgwODU3ODA1LCJuYmYiOjE2NDkzMjE4MDUsImp0aSI6ImxSUHc0UExUbVM1dEFkTmciLCJzdWIiOjY0NiwicHJ2IjoiOTRkYmQ5NjFhYWVmMGUzY2U2NmFkN2Q1MGU2NDc3MTc2MDlkZGEyNCIsImlkIjo2NDYsImZpcnN0X25hbWUiOiJUZXN0X3N0dSIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6IlRlc3Rfc3R1QGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzg0ZjRkYmRkYWY5ZmZiZTczZDI4NjNlYjgyMTk3ZjliLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiU3R1ZGVudCIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wNC0wN1QwODo1Njo0NSswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTA0LTA3VDA4OjU2OjQ1KzAwOjAwIn0.KpcOkN9YDipIFEGc9tBCMqeuA0IyZ9Wrx3j-SOGI_mU"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Test_stu",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Atre",
+									"type": "text"
+								},
+								{
+									"key": "student_gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "student_dob",
+									"value": "2021-03-05",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/update-student-profile",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"update-student-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update parent profile copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQ2Mzg2Njg0LCJleHAiOjE2Nzc5MjI2ODQsIm5iZiI6MTY0NjM4NjY4NCwianRpIjoiSXo4REJXR1FSNlcxWkYwMyIsInN1YiI6NDU2LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjQ1NiwiZmlyc3RfbmFtZSI6IlRlc3QxIiwibGFzdF9uYW1lIjoiQXRyZSIsImVtYWlsIjoiVGVzdDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvM2M0ZjQxOWU4Y2Q5NTg2OTBkMGQxNGIzYjg5MzgwZDMuanBnP3M9ODAmZD1tbSZyPWciLCJjb25maXJtZWQiOjEsInJvbGUiOiJQYXJlbnQiLCJwZXJtaXNzaW9ucyI6W10sInN0YXR1cyI6MSwiY3JlYXRlZF9hdCI6IjIwMjItMDEtMjJUMTE6MTc6MDQrMDA6MDAiLCJ1cGRhdGVkX2F0IjoiMjAyMi0wMS0yMlQxMToxNzowNCswMDowMCJ9.r_uk8wmQE8Uhl8ZBJZ5_G5gm6SOE97plMtufweEcDUA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Test1",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Atre.",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Test2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "1245785431",
+									"type": "text"
+								},
+								{
+									"key": "student_gender[0]",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "student_dob[0]",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "student_id[0]",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "student_name[1]",
+									"value": "test2",
+									"type": "text"
+								},
+								{
+									"key": "student_gender[1]",
+									"value": "Female",
+									"type": "text"
+								},
+								{
+									"key": "student_dob[1]",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "student_id[1]",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/update-parent-profile",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"update-parent-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update instructor profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NDY5OTY4MjEsImV4cCI6MTY3ODUzMjgyMSwibmJmIjoxNjQ2OTk2ODIxLCJqdGkiOiJEZ3VGV3lFaGlnRDdjSHkyIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoiQW5pa3RhIiwibGFzdF9uYW1lIjoiYXRyZSIsImVtYWlsIjoic3VyYWoxQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzNkZDU2NGQzMTdjMzNlMGQwNGRmNGQyYjhkZTc5NDVjLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQwNjo0NDoyNiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIn0.Po6YZmydmCUT3_KhXVIblvm2M8ZIPmlJPK2d--T-hfM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Anikta",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Anikta",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "suraj1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "1245785431",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_class[0]",
+									"value": "test 2",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_level[0]",
+									"value": "112",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_percentile[0]",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "edu_id[0]",
+									"value": "115",
+									"type": "text"
+								},
+								{
+									"key": "instructor_award_name[0]",
+									"value": "RGV",
+									"type": "text"
+								},
+								{
+									"key": "instructor_award_img[0]",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "award_id[0]",
+									"value": "76",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/update-instructor-profile",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"update-instructor-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update education",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NDY5OTY4MjEsImV4cCI6MTY3ODUzMjgyMSwibmJmIjoxNjQ2OTk2ODIxLCJqdGkiOiJEZ3VGV3lFaGlnRDdjSHkyIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoiQW5pa3RhIiwibGFzdF9uYW1lIjoiYXRyZSIsImVtYWlsIjoic3VyYWoxQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzNkZDU2NGQzMTdjMzNlMGQwNGRmNGQyYjhkZTc5NDVjLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQwNjo0NDoyNiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIn0.Po6YZmydmCUT3_KhXVIblvm2M8ZIPmlJPK2d--T-hfM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "instructor_edu_class",
+									"value": "Test 2",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_level",
+									"value": "113",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_percentile",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "edu_id",
+									"value": "129",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/update-instructor-education",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"update-instructor-education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add education",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NDY5OTY4MjEsImV4cCI6MTY3ODUzMjgyMSwibmJmIjoxNjQ2OTk2ODIxLCJqdGkiOiJEZ3VGV3lFaGlnRDdjSHkyIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoiQW5pa3RhIiwibGFzdF9uYW1lIjoiYXRyZSIsImVtYWlsIjoic3VyYWoxQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzNkZDU2NGQzMTdjMzNlMGQwNGRmNGQyYjhkZTc5NDVjLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQwNjo0NDoyNiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIn0.Po6YZmydmCUT3_KhXVIblvm2M8ZIPmlJPK2d--T-hfM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "instructor_edu_class",
+									"value": "Test 3",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_level",
+									"value": "113",
+									"type": "text"
+								},
+								{
+									"key": "instructor_edu_percentile",
+									"value": "2021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/add-instructor-education",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"add-instructor-education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add award",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NDY5OTY4MjEsImV4cCI6MTY3ODUzMjgyMSwibmJmIjoxNjQ2OTk2ODIxLCJqdGkiOiJEZ3VGV3lFaGlnRDdjSHkyIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoiQW5pa3RhIiwibGFzdF9uYW1lIjoiYXRyZSIsImVtYWlsIjoic3VyYWoxQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzNkZDU2NGQzMTdjMzNlMGQwNGRmNGQyYjhkZTc5NDVjLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQwNjo0NDoyNiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIn0.Po6YZmydmCUT3_KhXVIblvm2M8ZIPmlJPK2d--T-hfM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "instructor_award_img",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "instructor_award_name",
+									"value": "RGV",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/add-instructor-award",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"add-instructor-award"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete award",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NDY5OTY4MjEsImV4cCI6MTY3ODUzMjgyMSwibmJmIjoxNjQ2OTk2ODIxLCJqdGkiOiJEZ3VGV3lFaGlnRDdjSHkyIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoiQW5pa3RhIiwibGFzdF9uYW1lIjoiYXRyZSIsImVtYWlsIjoic3VyYWoxQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzNkZDU2NGQzMTdjMzNlMGQwNGRmNGQyYjhkZTc5NDVjLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQwNjo0NDoyNiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIn0.Po6YZmydmCUT3_KhXVIblvm2M8ZIPmlJPK2d--T-hfM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/delete-award/82",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-award",
+								"82"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete education",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2NDY5OTY4MjEsImV4cCI6MTY3ODUzMjgyMSwibmJmIjoxNjQ2OTk2ODIxLCJqdGkiOiJEZ3VGV3lFaGlnRDdjSHkyIiwic3ViIjo1NjAsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQiLCJpZCI6NTYwLCJmaXJzdF9uYW1lIjoiQW5pa3RhIiwibGFzdF9uYW1lIjoiYXRyZSIsImVtYWlsIjoic3VyYWoxQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzNkZDU2NGQzMTdjMzNlMGQwNGRmNGQyYjhkZTc5NDVjLmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQwNjo0NDoyNiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDA2OjQ0OjI2KzAwOjAwIn0.Po6YZmydmCUT3_KhXVIblvm2M8ZIPmlJPK2d--T-hfM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/delete-education/84",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-education",
+								"84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvcGFyZW50LXJlZ2lzdGVyIiwiaWF0IjoxNjQ3NTI0NzMyLCJleHAiOjE2NzkwNjA3MzIsIm5iZiI6MTY0NzUyNDczMiwianRpIjoienI4SXQzUFpQWE5mSDhudyIsInN1YiI6NTk4LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjU5OCwiZmlyc3RfbmFtZSI6IlRlc3QxMSIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6IlRlc3QxMUBnbWFpbC5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci84NzhjNjcyNmQxMDM2OWE0ZWRhZjBhZTg0NzY2NGM1NC5qcGc_cz04MCZkPW1tJnI9ZyIsImNvbmZpcm1lZCI6MSwicm9sZSI6IlBhcmVudCIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xN1QxMzo0NTozMiswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTE3VDEzOjQ1OjMyKzAwOjAwIn0.R9mRzKuwbX6xs8wbwQV4VeY03IiIwd10MayUMRgLhzw"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/profile",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get student details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvaW5zdHJ1Y3Rvci1yZWdpc3RlciIsImlhdCI6MTY0Njk5NzUyMCwiZXhwIjoxNjc4NTMzNTIwLCJuYmYiOjE2NDY5OTc1MjAsImp0aSI6IkpYU21vYmZyWFFyUVIydWkiLCJzdWIiOjU2MiwicHJ2IjoiOTRkYmQ5NjFhYWVmMGUzY2U2NmFkN2Q1MGU2NDc3MTc2MDlkZGEyNCIsImlkIjo1NjIsImZpcnN0X25hbWUiOiJUZXN0NyIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6IlRlc3Q3QGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I3NTRmYjVlNzYwZGVjM2Q5MjE1Y2RhM2IyMjcxZGE3LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQxMToxODo0MCswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDExOjE4OjQwKzAwOjAwIn0.-uoGlGcQ9_wf_lN1c5SakX86Ct1FmLOdgPLjymZhjQs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/student-detail/2",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"student-detail",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Student profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ZvbmNhYi5wbGF6YWV0Yy5jb20vYXBpL3YxL2F1dGgvaW5zdHJ1Y3Rvci1yZWdpc3RlciIsImlhdCI6MTY0Njk5NzUyMCwiZXhwIjoxNjc4NTMzNTIwLCJuYmYiOjE2NDY5OTc1MjAsImp0aSI6IkpYU21vYmZyWFFyUVIydWkiLCJzdWIiOjU2MiwicHJ2IjoiOTRkYmQ5NjFhYWVmMGUzY2U2NmFkN2Q1MGU2NDc3MTc2MDlkZGEyNCIsImlkIjo1NjIsImZpcnN0X25hbWUiOiJUZXN0NyIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6IlRlc3Q3QGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I3NTRmYjVlNzYwZGVjM2Q5MjE1Y2RhM2IyMjcxZGE3LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiSW5zdHJ1Y3RvciIsInBlcm1pc3Npb25zIjpbXSwic3RhdHVzIjoxLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMVQxMToxODo0MCswMDowMCIsInVwZGF0ZWRfYXQiOiIyMDIyLTAzLTExVDExOjE4OjQwKzAwOjAwIn0.-uoGlGcQ9_wf_lN1c5SakX86Ct1FmLOdgPLjymZhjQs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "submitted_till",
+									"value": "2021-03-05",
+									"type": "text"
+								},
+								{
+									"key": "assign_desc",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_ids[1]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/student-profile",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"student-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQ2Mzg2Njg0LCJleHAiOjE2Nzc5MjI2ODQsIm5iZiI6MTY0NjM4NjY4NCwianRpIjoiSXo4REJXR1FSNlcxWkYwMyIsInN1YiI6NDU2LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjQ1NiwiZmlyc3RfbmFtZSI6IlRlc3QxIiwibGFzdF9uYW1lIjoiQXRyZSIsImVtYWlsIjoiVGVzdDJAZ21haWwuY29tIiwicGljdHVyZSI6Imh0dHBzOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvM2M0ZjQxOWU4Y2Q5NTg2OTBkMGQxNGIzYjg5MzgwZDMuanBnP3M9ODAmZD1tbSZyPWciLCJjb25maXJtZWQiOjEsInJvbGUiOiJQYXJlbnQiLCJwZXJtaXNzaW9ucyI6W10sInN0YXR1cyI6MSwiY3JlYXRlZF9hdCI6IjIwMjItMDEtMjJUMTE6MTc6MDQrMDA6MDAiLCJ1cGRhdGVkX2F0IjoiMjAyMi0wMS0yMlQxMToxNzowNCswMDowMCJ9.r_uk8wmQE8Uhl8ZBJZ5_G5gm6SOE97plMtufweEcDUA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "1234561",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/change-password",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Page",
+			"item": [
+				{
+					"name": "Faqs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/faqs",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"faqs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terms and conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/terms-and-conditions",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"terms-and-conditions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terms and conditions copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/privacy-policy",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"privacy-policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terms and conditions copy copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQyNjg3ODg3LCJleHAiOjE2NzQyMjM4ODcsIm5iZiI6MTY0MjY4Nzg4NywianRpIjoiamVBaFljeEpUcWFvSW9NeCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.XDiLLZ5Ncr2ix9tzCed-LzmZapViPXPYfPwavvjBANM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thakur.satyendra77@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://foncab.plazaetc.com/api/v1/aboutUs",
+							"protocol": "https",
+							"host": [
+								"foncab",
+								"plazaetc",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"aboutUs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prayer tune",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://foncab.kavyasoftech.com/api/v1/prayer-tune",
+					"protocol": "http",
+					"host": [
+						"foncab",
+						"kavyasoftech",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prayer-tune"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "murid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/murid",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"murid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dahiras",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/dahiras?location=Indore&latitude=22.719568&longitude=75.857727",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"dahiras"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Indore"
+						},
+						{
+							"key": "latitude",
+							"value": "22.719568"
+						},
+						{
+							"key": "longitude",
+							"value": "75.857727"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task cateogry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://foncab.plazaetc.com/api/v1/task-cateogry",
+					"protocol": "https",
+					"host": [
+						"foncab",
+						"plazaetc",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"task-cateogry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Qasidas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/qasidas/",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"qasidas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Qasidas by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/qasidas/59",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"qasidas",
+						"59"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "quran juz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/quran/juz",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"quran",
+						"juz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quran sura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thakur.satyendra77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/quran/sura",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"quran",
+						"sura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quran verse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "surah_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/quran/verse",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"quran",
+						"verse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News cateogry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "surah_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "juz_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/news-cateogry",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"news-cateogry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "surah_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "juz_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.219.45.126/prayers/api/v1/news/27",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"45",
+						"126"
+					],
+					"path": [
+						"prayers",
+						"api",
+						"v1",
+						"news",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "baseurl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://foncab.kavyasoftech.com/api/v1/baseurl",
+					"protocol": "http",
+					"host": [
+						"foncab",
+						"kavyasoftech",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"baseurl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Students list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lesson_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "topic_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "submitted_till",
+							"value": "2021-03-05",
+							"type": "text"
+						},
+						{
+							"key": "assign_desc",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[0]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[1]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://foncab.plazaetc.com/api/v1/students",
+					"protocol": "https",
+					"host": [
+						"foncab",
+						"plazaetc",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Instructors list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lesson_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "topic_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "submitted_till",
+							"value": "2021-03-05",
+							"type": "text"
+						},
+						{
+							"key": "assign_desc",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[0]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[1]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://foncab.plazaetc.com/api/v1/instructors",
+					"protocol": "https",
+					"host": [
+						"foncab",
+						"plazaetc",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"instructors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Instructor edu percentile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lesson_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "topic_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "submitted_till",
+							"value": "2021-03-05",
+							"type": "text"
+						},
+						{
+							"key": "assign_desc",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[0]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[1]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://foncab.plazaetc.com/api/v1/instructor-edu-percentile",
+					"protocol": "https",
+					"host": [
+						"foncab",
+						"plazaetc",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"instructor-edu-percentile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Instructor edu levels",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lesson_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "topic_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "submitted_till",
+							"value": "2021-03-05",
+							"type": "text"
+						},
+						{
+							"key": "assign_desc",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[0]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[1]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://foncab.plazaetc.com/api/v1/instructor-edu-levels",
+					"protocol": "https",
+					"host": [
+						"foncab",
+						"plazaetc",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"instructor-edu-levels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTguMjE5LjQ1LjEyNi9wcmF5ZXJzL2FwaS92MS9hdXRoL2xvZ2luIiwiaWF0IjoxNjQxMjE1MDgyLCJleHAiOjE2NzI3NTEwODIsIm5iZiI6MTY0MTIxNTA4MiwianRpIjoiRmpiN2ZsOG1VOXFncG9ZNCIsInN1YiI6MzU0LCJwcnYiOiI5NGRiZDk2MWFhZWYwZTNjZTY2YWQ3ZDUwZTY0NzcxNzYwOWRkYTI0IiwiaWQiOjM1NCwiZmlyc3RfbmFtZSI6Ik1hbmlzaCIsImxhc3RfbmFtZSI6IkF0cmUiLCJlbWFpbCI6Im1hbmlzaGF0cmUua2F2eWFzb2Z0ZWNoQGdtYWlsLmNvbSIsInBpY3R1cmUiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2I4NzVlNGU2NmViMDg3ZGMxZjM4NDQwYjFkN2RmNTE2LmpwZz9zPTgwJmQ9bW0mcj1nIiwiY29uZmlybWVkIjoxLCJyb2xlIjoiVXNlciIsInBlcm1pc3Npb25zIjpbeyJpZCI6MiwibmFtZSI6InZpZXctZnJvbnRlbmQiLCJkaXNwbGF5X25hbWUiOiJWaWV3IEZyb250ZW5kIiwic29ydCI6Miwic3RhdHVzIjoxLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOS0wMy0wNSAwNTowNTo0MCIsInVwZGF0ZWRfYXQiOiIyMDE5LTAzLTA1IDA1OjA1OjQwIiwiZGVsZXRlZF9hdCI6bnVsbCwicGl2b3QiOnsidXNlcl9pZCI6MzU0LCJwZXJtaXNzaW9uX2lkIjoyfX1dLCJzdGF0dXMiOjEsImNyZWF0ZWRfYXQiOiIyMDIwLTA5LTIxVDEzOjMwOjAzKzAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDktMjFUMTM6MzA6MDMrMDA6MDAifQ.5LuGYvlo3Um8_AiQjIUdKdJ-AcQ6pIU7_GNAZQwx1KA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lesson_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "topic_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "submitted_till",
+							"value": "2021-03-05",
+							"type": "text"
+						},
+						{
+							"key": "assign_desc",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[0]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[1]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://foncab.plazaetc.com/api/v1/users/3",
+					"protocol": "https",
+					"host": [
+						"foncab",
+						"plazaetc",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

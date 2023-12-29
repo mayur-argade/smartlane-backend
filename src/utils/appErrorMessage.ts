@@ -1,0 +1,23 @@
+export const appErrorMessage = {
+  NODATA: "Content cannot be empty.",
+  EMAILALREADYEXISTS: "Email address already exists.",
+  MOBILENUMBERALREADYEXISTS: "Mobile number already registered with us.",
+  EMAILANDMOBEXISTS: `This mobile & email already registered.`,
+  SOCIALIDALREADYEXISTS: "Social_id already exists.",
+  EMAILANDSOCIALIDEXISTS: `This email & social_id already registered.`,
+  MOBILEANDSOCIALIDEXISTS: `This mobile & social_id already registered.`,
+  MOBILESOCIALIDANDEMAILEXISTS: `This mobile, email & social_id already registered.`,
+  EXCEPTION: "Error occured in application.",
+  INVALIDLOGIN: "Incorrect username or password.",
+  INVALIDTOKEN: "Your existing session token is not valid",
+  CODENOTMATCHED: "The added code does not match",
+  DATANOTFOUND: "Record not found",
+  EMAILDOESNOTEXISTS: "Email address does not exists",
+  RESETPASSWORDLINKEXPIRED: "Reset Password link expired",
+  SUCCESS: "Success",
+  OLDPASSWORDDOSENOTMATCH: "Entered Old Password does not match.",
+  NORECORDWITHEMAIL: "No record found for the given Email Id",
+  INVALIDPASSWORD: "Password does not match",
+  INVALIDUSERTYPE: "Invalid user type",
+  DATAALLREADYEXITS:"enter data is already register"
+};

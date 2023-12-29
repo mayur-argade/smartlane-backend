@@ -1,0 +1,601 @@
+{
+    "swagger":"2.0",
+    
+	"info": {
+        "description": "Smartlane Project", 
+        "version": "1.0",
+        "title": "Smartlane",
+        "contact": {
+            "name": "neelam parmar",
+            "email": "neelam.devyanitechnologies@gmail.com"
+        }
+    },
+   "host": "localhost:3001",
+
+   "basePath": "/api",
+   "securityDefinitions": {
+      "bearerAuth": {
+           "type": "apiKey",
+           "name": "authorization",
+           "scheme": "bearer",
+           "in": "headers"
+       }
+    },
+    
+    
+    "paths": {
+        "/register": {
+            "post": {
+                "tags": [
+                    "Registration API's"
+                ],
+                "summary": "Register user",
+                "description": "New user will register by this api",
+                "parameters": [
+                    {
+                        "name": "Post",
+                        "in": "body",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definations/UserRegistration"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/login": {
+            "post": {
+                "tags": [
+                    "login API's"
+                ],
+                "summary": " Login",
+                "description": "  Login  by this api",
+                "parameters": [
+                    {
+                        "name": "Post",
+                        "in": "body",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definations/Login"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200":{
+                        "description":"successfully update  new user"
+                    },
+                    "404":{
+                        "description":"not found"
+
+                    },
+                    "500":{
+                        "description":"server error"
+                    }
+                }
+            }
+        },
+        "/changepassword": {
+            "post": {
+                "tags": [
+                    "change password API's"
+                ],
+                
+                "summary": "change Password ",
+              
+                "description": "change password by this api",
+                
+                "parameters": [
+                    {
+                        "name": "Post",
+                        "in": "body",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definations/changePassword"
+                        }
+                       
+                    }
+                    
+                
+            ],
+            "responses": {
+                "200":{
+                    "description":"successfully update  new user"
+                },
+                "404":{
+                    "description":"not found"
+
+                },
+                "500":{
+                    "description":"server error"
+                }
+            }
+        } 
+    },
+    "/forgotpassword": {
+        "post": {
+            "tags": [
+                "User Password API's"
+            ],
+            "summary": "Password Forgot ",
+            "description": " forgot password  api",
+            "parameters": [
+                {
+                    "name": "Post",
+                    "in": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definations/ForgotPassword"
+                    }
+                }
+            ],
+            "responses": {
+                "200":{
+                    "description":"successfully update  new user"
+                },
+                "404":{
+                    "description":"not found"
+
+                },
+                "500":{
+                    "description":"server error"
+                }
+            }
+        }
+    },
+    "/verifyotp": {
+        "post": {
+            "tags": [
+                "Otp Verify API's"
+            ],
+            
+            "summary": "OTP Verify ",
+            "description": "otp verify by this api",
+            
+            "parameters": [
+                {
+                    "name": "Post",
+                    "in": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definations/verifyotp"
+                    }
+                }
+            
+        ],
+        "responses": {
+            "200":{
+                "description":"successfully update  new user"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+    } 
+},
+"/resetpassword": {
+    "post": {
+        "tags": [
+            "reset Password API's"
+        ],
+        
+        "summary": "Reset Password ",
+        "description": "reset password by this api",
+        
+        "parameters": [
+            {
+                "name": "Post",
+                "in": "body",
+                "required": false,
+                "schema": {
+                    "$ref": "#/definations/ResetPassword"
+                }
+            }
+        ],
+        "responses": {
+            "200":{
+                "description":"successfully update  new user"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+    }
+},
+"/resendotp": {
+    "post": {
+        "tags": [
+            "User Password API's"
+        ],
+        "summary": "Password Forgot ",
+        "description": " forgot password  api",
+        "parameters": [
+            {
+                "name": "Post",
+                "in": "body",
+                "required": false,
+                "schema": {
+                    "$ref": "#/definations/Resendotp"
+                }
+            }
+        ],
+        "responses": {
+            "200":{
+                "description":"successfully update  new user"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+    }
+},
+"/addproperty":{
+    "post": {
+        "tags": [
+            " add property API's"
+        ],
+        "summary": "Add property ",
+        "description": " Add property  api",
+        "security": [
+            {
+                "bearerAuth":[]
+               
+            }
+        ],
+        "parameters": [
+            {
+                "name": "Post",
+                "in": "body",
+                "required": false,
+                "schema": {
+                    "$ref": "#/definations/Addproperty"
+                }
+            }
+        ],
+        "responses": {
+            "200":{
+                "description":"successfully update  new user"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+    }
+},
+
+"/propertList": {
+    "post": {
+        "tags": [
+            "propertList API's"
+        ],
+       
+        "summary": "property Lists get",
+        "description": " User listes get file by this api",
+       
+        "security": [
+            {
+                "bearerAuth":[]
+               
+            }
+        ],
+        "responses": {
+            "200":{
+                "description":"successfully  get propert lists"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+       
+    }
+},
+"/searchPostcode": {
+    "post": {
+        "tags": [
+            "User Password API's"
+        ],
+        "summary": "searchPostcode ",
+        "description": " searchPostcode api",
+        "parameters": [
+            {
+                "name": "Post",
+                "in": "body",
+                "required": false,
+                "schema": {
+                    "$ref": "#/definations/Postcode"
+                }
+            }
+        ],
+        "responses": {
+            "200":{
+                "description":"successfully update  new user"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+    }
+},
+"/propertyDetail" :{
+    "post": {
+        "tags": [
+            "propertyDetail  API's"
+        ],
+       
+        "parameters": [
+            {
+            
+                "name": "propertydetail",
+                "in":"body",
+                
+                "required":true,
+                
+                "schema": {
+                    "$ref": "#/definations/propertydetail"
+                }
+                
+              }
+        
+    ],
+    "security": [
+        {
+            "bearerAuth":[]
+           
+        }
+    ],
+        "summary": "propertyDetail file",
+        "description": " propertyDetail file by this api",
+        "responses": {
+            "200":{
+                "description":"successfully update  new user"
+            },
+            "404":{
+                "description":"not found"
+
+            },
+            "500":{
+                "description":"server error"
+            }
+        }
+    
+    }
+}
+
+             
+},
+"definations": {
+    "UserRegistration": {
+        "description": "User Register",
+        "type": "object",
+        "properties": {
+            "full_name": {
+                "type": "string"
+            },
+            "email": {
+                "type": "string"
+            },
+           
+            "password": {
+                "type": "string"
+            },
+            "user_type": {
+                "type": "string"
+                
+            }
+        }
+    
+     
+    },
+    
+    "Login": {
+        "description": "User login ",
+        "type": "object",
+        "properties": {
+            "email": {
+                "type": "string"
+                
+            },
+            "password": {
+                "type": "string"
+            }
+            
+        }
+    },
+    "changePassword": {
+        "description": " change password By User",
+        "type": "object",
+        "properties": {
+            "old_password": {
+                "type": "string"
+            },
+            "new_password": {
+                "type": "string"
+            },
+            "email": {
+                "type": "string"
+            }
+        }
+    },
+    "ForgotPassword": {
+        "description": "Forgot Password",
+        "type": "object",
+        "properties": {
+            "email": {
+                "type": "string"
+            }
+        }
+    },
+    "verifyotp": {
+        "description": "otp verify ",
+        "type": "object",
+        "properties": {
+            "code": {
+                "type": "integer"
+            
+            },
+            "email": {
+                "type": "string"
+            }
+        }
+    },
+    "ResetPassword": {
+        "description": " Reset password By User",
+        "type": "object",
+        "properties": {
+            "code": {
+                "type": "integer"
+            },
+            "new_password": {
+                "type": "string"
+            },
+            "email": {
+                "type": "string"
+            }
+        }
+       
+    },
+    "Resendotp": {
+        "description": "Forgot Password",
+        "type": "object",
+        "properties": {
+            "email": {
+                "type": "string"
+            }
+        }
+    },
+    "Addproperty": {
+        "description": "Forgot Password",
+        "type": "object",
+       
+        "properties": {
+            "property":{
+           "property_name":{
+            "type":"string"
+
+           },
+           "address":{
+            "type":"string"
+           }
+         },
+        
+    
+         "roi":{
+            
+            "gross_monthly_income":{
+                "type":"integer"
+            },
+            "mortgage_payment":{
+                "type":"integer"
+            },
+            "management_fee":{
+                "type":"integer"
+            },
+            "ground_rent":{
+                "type":"integer"
+            },
+            "service_charge":{
+                "type":"integer"
+            }
+           },
+        
+           "insurance":{
+            "properties": {
+            "type":{
+                "type":"building"
+            } ,
+            "provider":{
+                "type":"b"
+            },
+            "expiry":{
+                "type":"integer"
+            }
+        }
+           },
+           "ownership":{
+            "properties": {
+            "company_number":{
+                "type":"integer"
+            },
+            "type":{
+                "type":"personal"
+            }
+           }},
+           "mortgage":{
+            "properties": {
+                "debt":{
+                    "type":"integer"
+                },
+                "type":{
+                    "type":"string"
+                },
+                "interest_rate":{
+                    "type":"integer"
+                },
+                "provider":{
+                    "type":"string"
+                },
+                "expiry":{
+                    "type":"integer"
+                }
+            }
+           },
+           "letting":{
+            "properties": {
+                "current_tenent":{
+                    "type":"string"
+                },
+                "tenant_expiry":{
+                    "type":"integer"
+                }
+
+           }
+           }} },
+     "propertydetail": {
+        "description": "User list",
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer"
+            }
+        }
+    
+    },
+    "Postcode": {
+        "description": "Forgot Password",
+        "type": "object",
+        "properties": {
+            "postcode": {
+                "type": "string"
+            }
+        }
+    }
+  
+
+
+   
+   
+}}
